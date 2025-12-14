@@ -1,8 +1,7 @@
 function Footer() {
 	return (
-		<div>
-			<hr />
-			<p>© 2025 Ex UI. All Rights Reserved.</p>
+		<div className='bg-[#0b1437]'>
+			<p className='text-white'>© 2025 Ex UI. All Rights Reserved.</p>
 			<nav>
 				<ul>
 					<li>

@@ -2,7 +2,7 @@ import Sunicon from './Sunicon'
 
 function Header() {
 	return (
-		<header>
+		<header className=' bg-[#0b1437]'>
 			<div>
 				<a href='#'>
 					Home / <a href='#'>Pages path</a>
@@ -19,7 +19,6 @@ function Header() {
 						</button>
 					</form>
 				</div>
-				<hr />
 			</div>
 		</header>
 	)
