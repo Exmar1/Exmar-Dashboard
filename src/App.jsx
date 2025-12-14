@@ -9,16 +9,16 @@ import Users from './pages/Users'
 
 const router = createBrowserRouter([
 	{
+		path: '/login',
+		element: <Login />,
+	},
+	{
 		path: '/',
 		element: <Layout />,
 		children: [
 			{
 				index: true,
 				element: <Home />,
-			},
-			{
-				path: '/login',
-				element: <Login />,
 			},
 			{
 				path: '/products',

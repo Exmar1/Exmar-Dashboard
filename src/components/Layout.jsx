@@ -7,11 +7,13 @@ function Layout() {
 	return (
 		<>
 			<Sidebar />
-			<Header />
-			<main>
-				<Outlet />
-			</main>
-			<Footer />
+			<div className='ml-[300px]'> 
+				<Header />
+				<main className='min-h-screen bg-[#0b1437] p-6'>
+					<Outlet />
+				</main>
+				<Footer />
+			</div>
 		</>
 	)
 }
