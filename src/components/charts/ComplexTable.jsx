@@ -46,7 +46,6 @@ const statusConfig = {
 export function ComplexTable() {
 	return (
 		<div className="bg-card rounded-2xl p-6">
-			{/* Header */}
 			<div className="flex items-center justify-between mb-6">
 				<h3 className="text-white font-semibold text-lg">
 					Complex Table
@@ -56,7 +55,6 @@ export function ComplexTable() {
 				</button>
 			</div>
 
-			{/* Table */}
 			<div className="overflow-x-auto">
 				<table className="w-full text-sm">
 					<thead>
@@ -85,12 +83,10 @@ export function ComplexTable() {
 									key={item.name}
 									className="border-b border-gray-800 last:border-none"
 								>
-									{/* Name */}
 									<td className="py-4 text-white font-medium">
 										{item.name}
 									</td>
 
-									{/* Status */}
 									<td className="py-4">
 										<div
 											className={`inline-flex items-center gap-2 px-3 py-1 rounded-full text-xs font-medium ${status.bg} ${status.color}`}
@@ -102,12 +98,10 @@ export function ComplexTable() {
 										</div>
 									</td>
 
-									{/* Date */}
 									<td className="py-4 text-gray-300">
 										{item.date}
 									</td>
 
-									{/* Progress */}
 									<td className="py-4">
 										<div className="w-full h-2 bg-gray-800 rounded-full overflow-hidden">
 											<div

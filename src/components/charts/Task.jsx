@@ -25,7 +25,6 @@ export function Tasks() {
 
 	return (
 		<div className="bg-card rounded-2xl p-6 h-full flex flex-col">
-			{/* Header */}
 			<div className="flex items-center justify-between mb-6">
 				<div className="flex items-center gap-2">
 					<div className="w-6 h-6 rounded-full bg-purple-500 flex items-center justify-center">
@@ -39,7 +38,6 @@ export function Tasks() {
 				</button>
 			</div>
 
-			{/* List */}
 			<div className="space-y-4 flex-1">
 				{tasks.map((task) => (
 					<div

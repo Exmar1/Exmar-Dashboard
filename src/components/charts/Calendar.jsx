@@ -19,7 +19,6 @@ export function Calendar() {
 
 	return (
 		<div className="bg-card rounded-2xl p-6">
-			{/* Header */}
 			<div className="flex items-center justify-between mb-4">
 				<button className="w-9 h-9 rounded-xl bg-purple-500 flex items-center justify-center text-white">
 					<i className="fa-solid fa-chevron-left"></i>
@@ -34,14 +33,12 @@ export function Calendar() {
 				</button>
 			</div>
 
-			{/* Days */}
 			<div className="grid grid-cols-7 gap-2 text-center text-xs text-gray-400 mb-3">
 				{days.map((day) => (
 					<div key={day}>{day}</div>
 				))}
 			</div>
 
-			{/* Dates */}
 			<div className="grid grid-cols-7 gap-2 text-center text-sm">
 				{dates.map((date, index) => (
 					<div
