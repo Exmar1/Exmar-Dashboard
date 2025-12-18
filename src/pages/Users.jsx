@@ -3,7 +3,7 @@ import TableUser from '../components/charts/TableUsers'
 function Users() {
 	return (
 		<div className='flex items-start justify-between gap-x-4'>
-			<div className='flex flex-col flex-1'> {/* добавил flex-1 */}
+			<div className='flex flex-col flex-1'> 
 				<h2 className='text-white mb-6 text-4xl font-normal'>
 					Customers
 				</h2>
@@ -33,13 +33,13 @@ function Users() {
 					<i className="fa-solid absolute left-2 text-gray-500 top-10 fa-magnifying-glass"></i>
 				</div>
 
-				<div className='mt-15 w-full'> {/* добавил w-full */}
+				<div className='mt-15 w-full'> 
 					<TableUser />
 				</div>
 				
 			</div>
 
-			<div className='bg-add hover:bg-hovered-add transition duration-150 ease-in-out rounded-xl w-25 flex text-white items-center justify-center flex-shrink-0'> {/* добавил flex-shrink-0 */}
+			<div className='bg-add hover:bg-hovered-add transition duration-150 ease-in-out rounded-xl w-25 flex text-white items-center justify-center flex-shrink-0'> 
 				<i className="fa-solid fa-plus"></i>
 				<button className='p-2.5'>Add</button>
 			</div>
