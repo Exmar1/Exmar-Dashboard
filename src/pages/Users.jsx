@@ -11,14 +11,14 @@ function Users() {
 				<div className='flex flex-row items-center gap-x-6 text-white mb-6'>
 					<div className='flex items-center gap-x-2'>
 						<i className="fa-solid fa-file-import"></i>
-						<button className='font-black active:bg-gray-500 rounded transition duration-150 ease-in-out active:scale-105'>
+						<button className='font-bold active:bg-gray-500 rounded transition duration-150 ease-in-out active:scale-105'>
 							Import
 						</button>
 					</div>
 
 					<div className='flex items-center gap-x-2'>
 						<i className="fa-solid fa-file-export"></i>
-						<button className='font-black active:bg-gray-500 rounded transition duration-150 ease-in-out active:scale-105'>
+						<button className='font-bold active:bg-gray-500 rounded transition duration-150 ease-in-out active:scale-105'>
 							Export
 						</button>
 					</div>
