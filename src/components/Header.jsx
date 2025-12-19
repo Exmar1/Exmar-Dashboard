@@ -50,15 +50,18 @@ function Header() {
 					</h1>
 				</div>
 
-				<div className='flex items-center gap-4'>
+				<div className='flex w-auto bg-card p-3 rounded-4xl items-center gap-4'>
 					<input
 						type='search'
 						placeholder='Type here...'
-						className='px-4 py-2 bg-[#0f1535] border border-[#2d3748] rounded-xl text-white placeholder:text-[#a3aed0]/50 [&::-webkit-search-cancel-button]:hidden'
+						className='px-4 py-2 bg-[#0f1535] border border-[#2d3748] rounded-4xl text-white placeholder:text-[#a3aed0]/50 [&::-webkit-search-cancel-button]:hidden'
 					/>
-					<button className='px-4 py-2 text-white font-medium rounded-xl'>
-						Account
-					</button>
+					<div className='w-10 h-10 flex items-center justify-center rounded-full bg-profile'>
+						<button className='mx-6 text-sm font-medium inline-flex appearance-none text-white '>
+							DP
+						</button>
+					</div>
+
 				</div>
 			</div>
 

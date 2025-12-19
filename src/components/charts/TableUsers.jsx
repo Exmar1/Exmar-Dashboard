@@ -11,6 +11,7 @@ export function TableUser() {
     phone: '908-691-3242',
     signedUp: 'Jun 27, 2025',
     checked: false,
+    avatar: "AA"
   },
   {
     id: 2,
@@ -20,6 +21,7 @@ export function TableUser() {
     phone: '123-456-7890',
     signedUp: 'May 14, 2025',
     checked: false,
+    avatar: "JC"
   },
   {
     id: 3,
@@ -29,6 +31,7 @@ export function TableUser() {
     phone: '123-456-7890',
     signedUp: 'July 10, 2024',
     checked: false,
+    avatar: "IP"
   },
   {
     id: 4,
@@ -38,6 +41,7 @@ export function TableUser() {
     phone: '101-831-1890',
     signedUp: 'December 21, 2025',
     checked: false,
+    avatar: "AP"
   },
   {
     id: 5,
@@ -47,6 +51,7 @@ export function TableUser() {
     phone: '129-346-9012',
     signedUp: 'February 30, 2023',
     checked: false,
+    avatar: "MS"
   },
   {
     id: 6,
@@ -56,6 +61,7 @@ export function TableUser() {
     phone: '971-456-1892',
     signedUp: 'September 2, 2024',
     checked: false,
+    avatar: "AI"
   },
   {
     id: 7,
@@ -65,6 +71,7 @@ export function TableUser() {
     phone: '023-718-8471',
     signedUp: 'November 30, 2025',
     checked: false,
+    avatar: "DM"
   },
   {
     id: 8,
@@ -74,6 +81,7 @@ export function TableUser() {
     phone: '234-012-0136',
     signedUp: 'May 14, 2025',
     checked: false,
+    avatar: "ON"
   },
   {
     id: 9,
@@ -83,6 +91,7 @@ export function TableUser() {
     phone: '638-891-9127',
     signedUp: 'May 9, 2023',
     checked: false,
+    avatar: "ES"
   },
 ])
 
@@ -136,7 +145,10 @@ export function TableUser() {
 
               <td className="px-6 py-4">
                 <div className="flex items-center gap-x-3">
-                  <div className="w-10 h-10 rounded-full bg-gray-200" />
+                  <div className="w-10 h-10 -ml-10 mr-3 rounded-full bg-profile 
+                  flex items-center justify-center text-white font-semibold text-sm">
+                    {item.avatar}
+                </div>
                   <span className="font-medium text-white">
                     {item.name}
                   </span>
