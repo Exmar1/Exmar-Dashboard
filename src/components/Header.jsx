@@ -1,10 +1,14 @@
 import { useEffect, useState } from 'react'
+import { LuSun } from "react-icons/lu"
 import { useLocation } from 'react-router-dom'
+import { useTheme } from './ThemeSetter/ThemeSet'
 
 function Header() {
 	const location = useLocation()
-	const currentPath = location.pathname
 
+	const {theme, toggleTheme} = useTheme()
+
+	const currentPath = location.pathname
 	const [isScrolled, setIsScrolled] = useState(false)
 
 	useEffect(() => {
@@ -40,7 +44,7 @@ function Header() {
 				}
 			`}
 		>
-			<div className='flex items-center justify-between'>
+			<div className={`${theme ? "dark" : ""} flex items-center justify-between`}>
 				<div>
 					<p className='text-white font-bold text-sm mb-1'>
 						Pages / <span>{pageTitle}</span>
@@ -56,6 +60,9 @@ function Header() {
 						placeholder='Type here...'
 						className='px-4 py-2 bg-[#0f1535] border border-[#2d3748] rounded-4xl text-white placeholder:text-[#a3aed0]/50 [&::-webkit-search-cancel-button]:hidden'
 					/>
+
+					<LuSun onClick={toggleTheme} data-theme={theme} className='text-white text-2xl' />
+
 					<div className='w-10 h-10 flex items-center justify-center rounded-full bg-profile'>
 						<button className='mx-6 text-sm font-medium inline-flex appearance-none text-white '>
 							DP
