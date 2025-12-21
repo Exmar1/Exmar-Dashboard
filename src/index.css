@@ -14,22 +14,7 @@
 }
 
 
-.active{
-	color:  white;
+.active {
+	@apply dark:text-white text-gray-900 font-semibold;
 }
 
-:root {
-  --background-color: #ffffff;
-  --text-color: #333333;
-}
-
-[data-theme='dark'] {
-  --background-color: #0B1437;
-  --text-color: #ffffff;
-}
-
-body {
-  background-color: var(--background-color);
-  color: var(--text-color);
-  transition: background-color 0.3s, color 0.3s;
-}

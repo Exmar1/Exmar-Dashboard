@@ -111,21 +111,21 @@ export function TableUser() {
   }
 
   return (
-    <div className="bg-card rounded-xl shadow-sm overflow-hidden w-full">
+    <div className="dark:bg-card bg-white rounded-xl shadow-md overflow-hidden w-full transition-colors duration-300">
       <table className="w-full border-collapse">
-        <thead className="text-gray-300 text-sm">
+        <thead className="dark:text-gray-300 text-gray-600 text-sm dark:bg-card bg-white">
           <tr>
             <th className="px-6 py-4">
-							<FancyCheckbox
-								checked={allChecked}
-								onChange={handleCheckAll}
-							/>
+              <FancyCheckbox
+                checked={allChecked}
+                onChange={handleCheckAll}
+              />
             </th>
-            <th className="px-6 py-4 text-left font-medium">Name</th>
-            <th className="px-6 py-4 text-left font-medium">Email</th>
-            <th className="px-6 py-4 text-left font-medium">Location</th>
-            <th className="px-6 py-4 text-left font-medium">Phone</th>
-            <th className="px-6 py-4 text-left font-medium">Signed Up</th>
+            <th className="px-6 py-4 text-left font-medium dark:text-white text-gray-900">Name</th>
+            <th className="px-6 py-4 text-left font-medium dark:text-white text-gray-900">Email</th>
+            <th className="px-6 py-4 text-left font-medium dark:text-white text-gray-900">Location</th>
+            <th className="px-6 py-4 text-left font-medium dark:text-white text-gray-900">Phone</th>
+            <th className="px-6 py-4 text-left font-medium dark:text-white text-gray-900">Signed Up</th>
           </tr>
         </thead>
 
@@ -133,7 +133,7 @@ export function TableUser() {
           {items.map(item => (
             <tr
               key={item.id}
-              className="border-t has-[input:checked]:bg-gray-900 hover:bg-gray-900 transition"
+              className="dark:border-t border-gray-100 dark:has-[input:checked]:bg-gray-900 has-[input:checked]:bg-purple-50 dark:hover:bg-gray-900 hover:bg-gray-50 transition-colors duration-200"
             >
               <td className="px-6 py-4">
               <FancyCheckbox
@@ -145,29 +145,29 @@ export function TableUser() {
 
               <td className="px-6 py-4">
                 <div className="flex items-center gap-x-3">
-                  <div className="w-10 h-10 -ml-10 mr-3 rounded-full bg-profile 
+                  <div className="w-10 h-10 -ml-10 mr-3 rounded-full dark:bg-profile bg-purple-600 
                   flex items-center justify-center text-white font-semibold text-sm">
                     {item.avatar}
                 </div>
-                  <span className="font-medium text-white">
+                  <span className="font-medium dark:text-white text-gray-900">
                     {item.name}
                   </span>
                 </div>
               </td>
 
-              <td className="px-6 py-4 text-white">
+              <td className="px-6 py-4 dark:text-white text-gray-700">
 								{item.email}
               </td>
 
-              <td className="px-6 py-4 text-white">
+              <td className="px-6 py-4 dark:text-white text-gray-700">
                 {item.location}
               </td>
 
-              <td className="px-6 py-4 text-white">
+              <td className="px-6 py-4 dark:text-white text-gray-700">
                 {item.phone}
               </td>
 
-              <td className="px-6 py-4 text-white">
+              <td className="px-6 py-4 dark:text-white text-gray-700">
                 {item.signedUp}
               </td>
             </tr>

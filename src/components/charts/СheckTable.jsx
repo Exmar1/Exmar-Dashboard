@@ -8,32 +8,36 @@ const tableData = [
 
 export function CheckTable() {
   return (
-    <div className="bg-card rounded-2xl p-6 h-full">
+    <div className="dark:bg-card bg-white rounded-2xl p-6 h-full shadow-md transition-colors duration-300">
       <div className="flex items-center justify-between mb-6">
-        <h3 className="text-white font-semibold">Check Table</h3>
-        <button className="text-gray-400">•••</button>
+        <h3 className="dark:text-white text-gray-900 font-semibold">Check Table</h3>
+        <button className="dark:text-gray-400 text-gray-600 hover:text-purple-500 transition">•••</button>
       </div>
 
       <table className="w-full text-sm">
-        <thead className="text-gray-400 border-b border-white/10">
+        <thead className="dark:text-gray-400 text-gray-600 dark:border-white/10 border-gray-200 border-b">
           <tr>
-            <th className="text-left py-2">NAME</th>
-            <th>PROGRESS</th>
-            <th>QUANTITY</th>
-            <th>DATE</th>
+            <th className="text-left py-2 font-medium">NAME</th>
+            <th className="font-medium">PROGRESS</th>
+            <th className="font-medium">QUANTITY</th>
+            <th className="font-medium">DATE</th>
           </tr>
         </thead>
 
         <tbody>
           {tableData.map((row, i) => (
-            <tr key={i} className="border-b border-white/5">
-              <td className="py-3 flex items-center gap-2 text-white">
-                <input type="checkbox" defaultChecked={i !== 0} />
+            <tr key={i} className="dark:border-white/5 border-gray-100 border-b">
+              <td className="py-3 flex items-center gap-2 dark:text-white text-gray-900">
+                <input 
+                  type="checkbox" 
+                  defaultChecked={i !== 0}
+                  className="w-4 h-4 accent-purple-500"
+                />
                 {row.name}
               </td>
-              <td className="text-center text-white">{row.progress}</td>
-              <td className="text-center text-white">{row.quantity}</td>
-              <td className="text-center text-white">{row.date}</td>
+              <td className="text-center dark:text-white text-gray-900">{row.progress}</td>
+              <td className="text-center dark:text-white text-gray-900">{row.quantity}</td>
+              <td className="text-center dark:text-white text-gray-900">{row.date}</td>
             </tr>
           ))}
         </tbody>

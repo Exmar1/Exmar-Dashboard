@@ -12,11 +12,11 @@ const data = [
 
 export function DailyTraffic() {
   return (
-    <div className="bg-card rounded-2xl p-6 h-full">
+    <div className="dark:bg-card bg-white rounded-2xl p-6 h-full shadow-md transition-colors duration-300">
       <div className="flex justify-between mb-4">
         <div>
-          <p className="text-gray-400 text-sm">Daily Traffic</p>
-          <h3 className="text-white text-2xl font-bold">
+          <p className="dark:text-gray-400 text-gray-600 text-sm">Daily Traffic</p>
+          <h3 className="dark:text-white text-gray-900 text-2xl font-bold">
             2.579 <span className="text-sm font-normal">Visitors</span>
           </h3>
         </div>

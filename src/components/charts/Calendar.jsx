@@ -18,22 +18,22 @@ export function Calendar() {
 	]
 
 	return (
-		<div className="bg-card rounded-2xl p-6">
+		<div className="dark:bg-card bg-white rounded-2xl p-6 shadow-md transition-colors duration-300">
 			<div className="flex items-center justify-between mb-4">
-				<button className="w-9 h-9 rounded-xl bg-purple-500 flex items-center justify-center text-white">
+				<button className="w-9 h-9 rounded-xl bg-purple-500 flex items-center justify-center text-white hover:bg-purple-600 transition">
 					<i className="fa-solid fa-chevron-left"></i>
 				</button>
 
-				<h3 className="text-white font-semibold">
+				<h3 className="dark:text-white text-gray-900 font-semibold">
 					декабрь 2025 г.
 				</h3>
 
-				<button className="w-9 h-9 rounded-xl bg-purple-500 flex items-center justify-center text-white">
+				<button className="w-9 h-9 rounded-xl bg-purple-500 flex items-center justify-center text-white hover:bg-purple-600 transition">
 					<i className="fa-solid fa-chevron-right"></i>
 				</button>
 			</div>
 
-			<div className="grid grid-cols-7 gap-2 text-center text-xs text-gray-400 mb-3">
+			<div className="grid grid-cols-7 gap-2 text-center text-xs dark:text-gray-400 text-gray-600 mb-3">
 				{days.map((day) => (
 					<div key={day}>{day}</div>
 				))}
@@ -44,10 +44,10 @@ export function Calendar() {
 					<div
 						key={index}
 						className={`h-9 flex items-center justify-center rounded-xl ${
-							date === 17
+							date === 21
 								? 'bg-purple-500 text-white'
-								: 'text-gray-300'
-						}`}
+								: 'dark:text-gray-300 text-gray-700 hover:bg-gray-100 dark:hover:bg-gray-800'
+						} transition-colors`}
 					>
 						{date}
 					</div>

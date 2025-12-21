@@ -10,10 +10,10 @@ const COLORS = ['#6366f1', '#38bdf8', '#e5e7eb']
 
 export function PieStats() {
   return (
-    <div className="bg-card rounded-2xl p-6 h-full">
+    <div className="dark:bg-card bg-white rounded-2xl p-6 h-full shadow-md transition-colors duration-300">
       <div className="flex justify-between mb-4">
-        <h3 className="text-white font-semibold">Your Pie Chart</h3>
-        <span className="text-gray-400 text-sm">Monthly</span>
+        <h3 className="dark:text-white text-gray-900 font-semibold">Your Pie Chart</h3>
+        <span className="dark:text-gray-400 text-gray-600 text-sm">Monthly</span>
       </div>
 
       <div className="h-[180px]">
@@ -36,7 +36,7 @@ export function PieStats() {
 
       <div className="mt-4 space-y-2 text-sm">
         {data.map((item, i) => (
-          <div key={i} className="flex justify-between text-white">
+          <div key={i} className="flex justify-between dark:text-white text-gray-900">
             <span className="flex items-center gap-2">
               <span className="w-2 h-2 rounded-full" style={{ background: COLORS[i] }} />
               {item.name}

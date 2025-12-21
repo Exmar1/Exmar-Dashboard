@@ -45,12 +45,12 @@ const statusConfig = {
 
 export function ComplexTable() {
 	return (
-		<div className="bg-card rounded-2xl p-6">
+		<div className="dark:bg-card bg-white rounded-2xl p-6 shadow-md transition-colors duration-300">
 			<div className="flex items-center justify-between mb-6">
-				<h3 className="text-white font-semibold text-lg">
+				<h3 className="dark:text-white text-gray-900 font-semibold text-lg">
 					Complex Table
 				</h3>
-				<button className="w-9 h-9 rounded-full bg-gray-800 flex items-center justify-center text-gray-400 hover:text-white transition">
+				<button className="w-9 h-9 rounded-full dark:bg-gray-800 bg-gray-200 flex items-center justify-center dark:text-gray-400 text-gray-600 dark:hover:text-white hover:text-gray-900 transition">
 					<i className="fa-solid fa-ellipsis"></i>
 				</button>
 			</div>
@@ -58,7 +58,7 @@ export function ComplexTable() {
 			<div className="overflow-x-auto">
 				<table className="w-full text-sm">
 					<thead>
-						<tr className="text-gray-400 border-b border-gray-700">
+						<tr className="dark:text-gray-400 text-gray-600 dark:border-gray-700 border-gray-200 border-b">
 							<th className="text-left py-3 font-medium">
 								NAME
 							</th>
@@ -81,9 +81,9 @@ export function ComplexTable() {
 							return (
 								<tr
 									key={item.name}
-									className="border-b border-gray-800 last:border-none"
+									className="dark:border-gray-800 border-gray-100 border-b last:border-none"
 								>
-									<td className="py-4 text-white font-medium">
+									<td className="py-4 dark:text-white text-gray-900 font-medium">
 										{item.name}
 									</td>
 
@@ -98,12 +98,12 @@ export function ComplexTable() {
 										</div>
 									</td>
 
-									<td className="py-4 text-gray-300">
+									<td className="py-4 dark:text-gray-300 text-gray-600">
 										{item.date}
 									</td>
 
 									<td className="py-4">
-										<div className="w-full h-2 bg-gray-800 rounded-full overflow-hidden">
+										<div className="w-full h-2 dark:bg-gray-800 bg-gray-200 rounded-full overflow-hidden">
 											<div
 												className="h-full bg-purple-500 rounded-full transition-all"
 												style={{

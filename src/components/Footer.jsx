@@ -1,36 +1,16 @@
 function Footer() {
 	return (
-		<div className='bg-[#0b1437] py-6 px-6'>
-			<div className='flex flex-col md:flex-row items-center justify-between gap-4'>
-				<p className='text-gray-400 text-sm'>
-					© 2025 Ex UI. All Rights Reserved. Made with love by <span className='text-white font-semibold'>Exmar!</span>
-				</p>
-				<nav>
-					<ul className='flex items-center gap-6'>
-						<li>
-							<a href='#' className='text-gray-400 hover:text-white text-sm transition'>
-								Support
-							</a>
-						</li>
-						<li>
-							<a href='#' className='text-gray-400 hover:text-white text-sm transition'>
-								License
-							</a>
-						</li>
-						<li>
-							<a href='#' className='text-gray-400 hover:text-white text-sm transition'>
-								Terms of Use
-							</a>
-						</li>
-						<li>
-							<a href='#' className='text-gray-400 hover:text-white text-sm transition'>
-								Blog
-							</a>
-						</li>
-					</ul>
-				</nav>
+		<footer className="dark:bg-card bg-white px-8 py-6 dark:text-gray-400 text-gray-600 text-sm transition-colors duration-300">
+			<div className="flex justify-between items-center">
+				<p>© 2025 Ex UI. All Rights Reserved. Made with love by <span className="dark:text-white text-gray-900 font-semibold">Exmart</span></p>
+				<div className="flex gap-6">
+					<a href="#" className="hover:text-purple-500 transition">Support</a>
+					<a href="#" className="hover:text-purple-500 transition">License</a>
+					<a href="#" className="hover:text-purple-500 transition">Terms of Use</a>
+					<a href="#" className="hover:text-purple-500 transition">Blog</a>
+				</div>
 			</div>
-		</div>
+		</footer>
 	)
 }
 

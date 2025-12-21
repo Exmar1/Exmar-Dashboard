@@ -24,16 +24,16 @@ export function Tasks() {
 	}
 
 	return (
-		<div className="bg-card rounded-2xl p-6 h-full flex flex-col">
+		<div className="dark:bg-card bg-white rounded-2xl p-6 h-full flex flex-col shadow-md transition-colors duration-300">
 			<div className="flex items-center justify-between mb-6">
 				<div className="flex items-center gap-2">
 					<div className="w-6 h-6 rounded-full bg-purple-500 flex items-center justify-center">
 						<i className="fa-solid fa-check text-white text-xs"></i>
 					</div>
-					<h3 className="text-white font-semibold">Tasks</h3>
+					<h3 className="dark:text-white text-gray-900 font-semibold">Tasks</h3>
 				</div>
 
-				<button className="w-9 h-9 rounded-full bg-gray-800 flex items-center justify-center text-gray-400 hover:text-white transition">
+				<button className="w-9 h-9 rounded-full dark:bg-gray-800 bg-gray-200 flex items-center justify-center dark:text-gray-400 text-gray-600 dark:hover:text-white hover:text-gray-900 transition">
 					<i className="fa-solid fa-ellipsis"></i>
 				</button>
 			</div>
@@ -54,15 +54,15 @@ export function Tasks() {
 							<span
 								className={`text-sm ${
 									task.done
-										? 'text-gray-400 line-through'
-										: 'text-white'
+										? 'dark:text-gray-400 text-gray-500 line-through'
+										: 'dark:text-white text-gray-900'
 								}`}
 							>
 								{task.title}
 							</span>
 						</label>
 
-						<i className="fa-solid fa-grip-vertical text-gray-500 ml-2"></i>
+						<i className="fa-solid fa-grip-vertical dark:text-gray-500 text-gray-400 ml-2"></i>
 					</div>
 				))}
 			</div>
