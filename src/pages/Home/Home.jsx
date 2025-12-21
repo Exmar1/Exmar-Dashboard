@@ -1,11 +1,11 @@
-import Calendar from '../components/charts/Calendar'
-import ComplexTable from '../components/charts/ComplexTable'
-import DailyTraffic from '../components/charts/DailyTraffic'
-import PieStats from '../components/charts/PieStats'
-import { RevenueLineChart } from '../components/charts/revenudeChart'
-import Tasks from '../components/charts/Task'
-import { WeeklyRevenueChart } from '../components/charts/weeklyData'
-import CheckTable from '../components/charts/СheckTable'
+import Calendar from '../../components/widgets/Calendar'
+import ComplexTable from '../../components/widgets/ComplexTable'
+import DailyTraffic from '../../components/widgets/DailyTraffic'
+import PieStats from '../../components/widgets/PieStats'
+import { RevenueLineChart } from '../../components/widgets/revenudeChart'
+import Tasks from '../../components/widgets/Task'
+import { WeeklyRevenueChart } from '../../components/widgets/weeklyData'
+import CheckTable from '../../components/widgets/СheckTable'
 
 function Home() {
 	return (

@@ -1,5 +1,5 @@
 import { useState } from 'react'
-import { FancyCheckbox } from '../Checkbox/CustomCheckbox'
+import { FancyCheckbox } from '../../../components/ui/Checkbox/CustomCheckbox'
 
 export function TableUser() {
   const [items, setItems] = useState([

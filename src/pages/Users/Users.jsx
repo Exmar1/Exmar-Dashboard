@@ -1,4 +1,4 @@
-import TableUser from '../components/charts/TableUsers'
+import TableUser from './components/TableUsers'
 
 function Users() {
 	return (

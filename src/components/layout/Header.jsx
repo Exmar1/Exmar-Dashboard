@@ -1,7 +1,7 @@
 import { useEffect, useState } from 'react'
 import { LuMoon, LuSun } from "react-icons/lu"
 import { useLocation } from 'react-router-dom'
-import { useTheme } from './ThemeSetter/ThemeSet'
+import { useTheme } from '../ThemeSetter/ThemeSet'
 
 function Header() {
 	const location = useLocation()

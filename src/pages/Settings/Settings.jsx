@@ -1,4 +1,4 @@
-import { FancyCheckbox } from '../components/Checkbox/CustomCheckbox'
+import { FancyCheckbox } from '../../components/ui/Checkbox//CustomCheckbox'
 
 function Settings() {
 	return (

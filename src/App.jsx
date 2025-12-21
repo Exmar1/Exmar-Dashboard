@@ -1,11 +1,11 @@
 import { createBrowserRouter, RouterProvider } from 'react-router-dom'
-import Layout from './components/Layout'
+import Layout from './components/layout/Layout'
 import { ThemeProvider } from './components/ThemeSetter/ThemeSet'
-import Home from './pages/Home'
-import Login from './pages/Login'
-import Products from './pages/Products'
-import Settings from './pages/Settings'
-import Users from './pages/Users'
+import Home from './pages/Home/Home'
+import Login from './pages/Login/Login'
+import Products from './pages/Products/Products'
+import Settings from './pages/Settings/Settings'
+import Users from './pages/Users/Users'
 
 const router = createBrowserRouter([
 	{

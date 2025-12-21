@@ -1,7 +1,7 @@
 import { useState } from 'react'
 import { LuMoon, LuSun } from "react-icons/lu"
 import { Link, useNavigate } from 'react-router-dom'
-import { useTheme } from '../components/ThemeSetter/ThemeSet'
+import { useTheme } from '../../components/ThemeSetter/ThemeSet'
 
 function Login() {
 	const [email, setEmail] = useState('');

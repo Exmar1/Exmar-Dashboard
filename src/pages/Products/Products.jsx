@@ -1,5 +1,6 @@
-import ProductCard from '../components/ProductCard'
-import { products } from '../data/dataProducts'
+import ProductCard from '../../components/ui/ProductCard'
+import { products } from '../../data/dataProducts'
+
 
 function Products() {
   return (
