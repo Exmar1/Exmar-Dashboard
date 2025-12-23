@@ -7,9 +7,9 @@ function Layout() {
 	return (
 		<>
 			<Sidebar />
-			<div className='ml-[300px]'> 
+			<div className='ml-0 dark:bg-[#0B1437] lg:ml-[300px]'> 
 				<Header />
-				<main className='min-h-screen dark:bg-[#0b1437] bg-[#EDF2F7] p-6 transition-colors duration-300'>
+				<main className='min-h-screen p-3 md:p-6'>
 					<Outlet />
 				</main>
 				<Footer />

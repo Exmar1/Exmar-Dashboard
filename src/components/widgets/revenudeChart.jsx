@@ -8,18 +8,22 @@ import {
 } from 'recharts'
 
 import { revenueData } from '../../data/dataCharts'
- revenueData
 
 export function RevenueLineChart() {
   return (
     <div className="h-64">
       <ResponsiveContainer width="100%" height="100%">
-        <LineChart data={revenueData}>
+        <LineChart 
+          data={revenueData}
+          margin={{ top: 5, right: 10, left: 10, bottom: 5 }}
+        >
           <XAxis
             dataKey="month"
             stroke="#64748b"
             tickLine={false}
             axisLine={false}
+            interval={0}
+            tick={{ fontSize: 12 }}
           />
           <YAxis hide />
           <Tooltip />

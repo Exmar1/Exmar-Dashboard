@@ -1,7 +1,7 @@
 import { useState } from 'react'
 import { FancyCheckbox } from '../../../components/ui/Checkbox/CustomCheckbox'
 
-export function TableUser() {
+export function TableUser({ mobile = false }) {
   const [items, setItems] = useState([
   {
     id: 1,
@@ -110,70 +110,106 @@ export function TableUser() {
     ))
   }
 
+  if (mobile) {
   return (
+    <>
+      {items.map(item => (
+        <div key={item.id} className="rounded-xl dark:bg-card bg-white p-4 shadow flex items-center justify-between">
+          
+          <div className="flex items-center gap-3">
+            <div className="w-10 h-10 rounded-full dark:bg-profile bg-purple-600 flex items-center justify-center text-white font-semibold">
+              {item.avatar}
+            </div>
+
+            <div>
+              <h3 className="font-semibold dark:text-white text-gray-900">{item.name}</h3>
+              <p className="text-sm dark:text-gray-400 text-gray-600 truncate max-w-[180px]">
+                {item.email}
+              </p>
+            </div>
+          </div>
+
+          <div className="text-right">
+            <p className="text-xs dark:text-gray-400 text-gray-500">{item.phone}</p>
+            <span className="text-[11px] dark:text-gray-500 text-gray-400">
+              {item.location}
+            </span>
+          </div>
+
+        </div>
+      ))}
+    </>
+  )
+}
+  return (
+
     <div className="dark:bg-card bg-white rounded-xl shadow-md overflow-hidden w-full transition-colors duration-300">
-      <table className="w-full border-collapse">
-        <thead className="dark:text-gray-300 text-gray-600 text-sm dark:bg-card bg-white">
-          <tr>
-            <th className="px-6 py-4">
-              <FancyCheckbox
-                checked={allChecked}
-                onChange={handleCheckAll}
-              />
-            </th>
-            <th className="px-6 py-4 text-left font-medium dark:text-white text-gray-900">Name</th>
-            <th className="px-6 py-4 text-left font-medium dark:text-white text-gray-900">Email</th>
-            <th className="px-6 py-4 text-left font-medium dark:text-white text-gray-900">Location</th>
-            <th className="px-6 py-4 text-left font-medium dark:text-white text-gray-900">Phone</th>
-            <th className="px-6 py-4 text-left font-medium dark:text-white text-gray-900">Signed Up</th>
-          </tr>
-        </thead>
-
-        <tbody className="text-sm">
-          {items.map(item => (
-            <tr
-              key={item.id}
-              className="dark:border-t border-gray-100 dark:has-[input:checked]:bg-gray-900 has-[input:checked]:bg-purple-50 dark:hover:bg-gray-900 hover:bg-gray-50 transition-colors duration-200"
-            >
-              <td className="px-6 py-4">
-              <FancyCheckbox
-								id={item.id}
-								checked={item.checked}
-								onChange={() => handleCheckOne(item.id)}
-							/>
-              </td>
-
-              <td className="px-6 py-4">
-                <div className="flex items-center gap-x-3">
-                  <div className="w-10 h-10 -ml-10 mr-3 rounded-full dark:bg-profile bg-purple-600 
-                  flex items-center justify-center text-white font-semibold text-sm">
-                    {item.avatar}
-                </div>
-                  <span className="font-medium dark:text-white text-gray-900">
-                    {item.name}
-                  </span>
-                </div>
-              </td>
-
-              <td className="px-6 py-4 dark:text-white text-gray-700">
-								{item.email}
-              </td>
-
-              <td className="px-6 py-4 dark:text-white text-gray-700">
-                {item.location}
-              </td>
-
-              <td className="px-6 py-4 dark:text-white text-gray-700">
-                {item.phone}
-              </td>
-
-              <td className="px-6 py-4 dark:text-white text-gray-700">
-                {item.signedUp}
-              </td>
+      <div className="overflow-x-auto">
+        <table className="w-full border-collapse min-w-[800px]">
+          <thead className="dark:text-gray-300 text-gray-600 text-xs md:text-sm dark:bg-card bg-white">
+            <tr>
+              <th className="px-3 md:px-6 py-3 md:py-4">
+                <FancyCheckbox
+                  checked={allChecked}
+                  onChange={handleCheckAll}
+                />
+              </th>
+              <th className="px-3 md:px-6 py-3 md:py-4 text-left font-medium dark:text-white text-gray-900">Name</th>
+              <th className="px-3 md:px-6 py-3 md:py-4 text-left font-medium dark:text-white text-gray-900">Email</th>
+              <th className="px-3 md:px-6 py-3 md:py-4 text-left font-medium dark:text-white text-gray-900 hidden lg:table-cell">Location</th>
+              <th className="px-3 md:px-6 py-3 md:py-4 text-left font-medium dark:text-white text-gray-900 hidden md:table-cell">Phone</th>
+              <th className="px-3 md:px-6 py-3 md:py-4 text-left font-medium dark:text-white text-gray-900 hidden xl:table-cell">Signed Up</th>
             </tr>
-          ))}
-        </tbody>
-      </table>
+          </thead>
+
+          <tbody className="text-xs md:text-sm">
+            {items.map(item => (
+              <tr
+                key={item.id}
+                className="dark:border-t border-gray-100 dark:has-[input:checked]:bg-gray-900 has-[input:checked]:bg-purple-50 dark:hover:bg-gray-900 hover:bg-gray-50 transition-colors duration-200"
+              >
+                <td className="px-3 md:px-6 py-3 md:py-4">
+                  <FancyCheckbox
+                    id={item.id}
+                    checked={item.checked}
+                    onChange={() => handleCheckOne(item.id)}
+                  />
+                </td>
+
+                <td className="px-3 md:px-6 py-3 md:py-4">
+                  <div className="flex items-center gap-x-2 md:gap-x-3">
+                    <div className="w-8 h-8 md:w-10 md:h-10 rounded-full dark:bg-profile bg-purple-600 
+                    flex items-center justify-center text-white font-semibold text-xs md:text-sm flex-shrink-0">
+                      {item.avatar}
+                    </div>
+                    <span className="font-medium dark:text-white text-gray-900 truncate">
+                      {item.name}
+                    </span>
+                  </div>
+                </td>
+
+                <td className="px-3 md:px-6 py-3 md:py-4 dark:text-white text-gray-700">
+                  <span className="block truncate max-w-[150px] md:max-w-none">
+                    {item.email}
+                  </span>
+                </td>
+
+                <td className="px-3 md:px-6 py-3 md:py-4 dark:text-white text-gray-700 hidden lg:table-cell">
+                  {item.location}
+                </td>
+
+                <td className="px-3 md:px-6 py-3 md:py-4 dark:text-white text-gray-700 hidden md:table-cell">
+                  {item.phone}
+                </td>
+
+                <td className="px-3 md:px-6 py-3 md:py-4 dark:text-white text-gray-700 hidden xl:table-cell">
+                  {item.signedUp}
+                </td>
+              </tr>
+            ))}
+          </tbody>
+        </table>
+      </div>
     </div>
   )
 }
