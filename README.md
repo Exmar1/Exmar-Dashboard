@@ -1,7 +1,7 @@
 # ⚡️ Exmar-Dashboard  
 
 <p>&nbsp;</p>
-[<img alt="Dashboard Preview" src='../assets/images/image.png' />](#)
+[<img alt="Dashboard Preview" src='assets/images/preview.png' />](#)
 <p>&nbsp;</p>
 
 Современная и удобная **Admin Dashboard панель**, созданная на React + Tailwind.
@@ -48,11 +48,17 @@
 
 2. Склонируй проект
 
-3. Установи зависимости ```bash npm install ```
+3. Установи зависимости ```npm install ```
 
-4. Запусти локально ```bash npm run dev ```
+4. Запусти локально ```npm run dev ```
 
 ---
 
 📄 License
 Проект распространяется по лицензии MIT.
+
+👨‍💻 Автор
+
+Exmar — Fullstack Developer
+
+📧 Telegram: @Exmar1
