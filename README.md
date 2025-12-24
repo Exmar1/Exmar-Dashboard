@@ -1,17 +1,58 @@
-HEAD
+# ⚡️ Exmar-Dashboard  
 
-# React + Vite
+<p>&nbsp;</p>
+[<img alt="Dashboard Preview" src='../assets/images/image.png' />](#)
+<p>&nbsp;</p>
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Современная и удобная **Admin Dashboard панель**, созданная на React + Tailwind.
+Подходит для аналитики, админок, внутренних CRM и любых проектов, где нужна
+красивая и понятная панель управления.
 
-Currently, two official plugins are available:
+---
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## Введение
 
-## Expanding the ESLint configuration
+Этот проект создан для тех, кому важны:
+- современный интерфейс  
+- аккуратный UX  
+- простая и чистая архитектура  
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+В панели уже есть таблицы, графики, статистика, карточки KPI и готовые секции.
+Можно легко кастомизировать и расширять.
 
-# Exmar-Dashboard
+Экономь десятки часов, не собирая админку с нуля 
 
+---
+
+
+## Фичи
+
+- Готовые страницы и компоненты  
+- Карточки показателей (KPI)  
+- Графики (Revenue, Weekly, Traffic и т.д.)  
+- Таблицы с данными  
+- Sidebar + Header  
+- Тёмная палитра  
+- Адаптивная верстка
+
+---
+
+##  Документация
+
+Проект структурирован и легко читается.  
+Основная логика разделена по компонентам, страницы разбиты по модулям.
+
+## Как запустить 
+
+1. Установи Node.js LTS
+
+2. Склонируй проект
+
+3. Установи зависимости ```bash npm install ```
+
+4. Запусти локально ```bash npm run dev ```
+
+---
+
+📄 License
+Проект распространяется по лицензии MIT.
