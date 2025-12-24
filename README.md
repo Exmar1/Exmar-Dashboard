@@ -1,8 +1,6 @@
 # ⚡️ Exmar-Dashboard  
 
-<p>&nbsp;</p>
 [<img alt="Dashboard Preview" src='src\assets\images\preview.png' />]
-<p>&nbsp;</p>
 
 Современная и удобная **Admin Dashboard панель**, созданная на React + Tailwind.
 Подходит для аналитики, админок, внутренних CRM и любых проектов, где нужна
