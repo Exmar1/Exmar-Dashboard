@@ -1,7 +1,7 @@
 # ⚡️ Exmar-Dashboard  
 
 <p>&nbsp;</p>
-[<img alt="Dashboard Preview" src='assets/images/preview.png' />](#)
+[<img alt="Dashboard Preview" src='/assets/images/preview.png' />](#)
 <p>&nbsp;</p>
 
 Современная и удобная **Admin Dashboard панель**, созданная на React + Tailwind.
